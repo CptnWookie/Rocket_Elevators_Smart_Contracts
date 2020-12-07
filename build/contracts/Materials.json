@@ -1,0 +1,110 @@
+{
+  "contractName": "Materials",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/Git/Rocket_Elevators_Smart_Contracts/contracts/MaterialProvider.sol\":\"Materials\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/Git/Rocket_Elevators_Smart_Contracts/contracts/MaterialProvider.sol\":{\"keccak256\":\"0x8a2b3691c403fc2c0e4c1bf930e56d27aaad1909784285cce2cc2f4f702ce1a6\",\"urls\":[\"bzz-raw://805c9349e25c20c52b1c28deec18fb50462d0dcf80f9493b56ca967868f3d3a8\",\"dweb:/ipfs/QmdcLZsZ1Cs8mPp95wp8hbQb4peLsBeYTgoYAmpCqieJqi\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a723158204575e930690eb7f3586d186974f83ce6251281677c538567ec20d8f8e5dd731b64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158204575e930690eb7f3586d186974f83ce6251281677c538567ec20d8f8e5dd731b64736f6c63430005100032",
+  "sourceMap": "36:31:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:31:0;;;;;;;",
+  "deployedSourceMap": "36:31:0:-;;;;;",
+  "source": "pragma solidity >=0.4.22 <0.8.0;\r\n\r\ncontract Materials {\r\n\r\n\r\n  \r\n}",
+  "sourcePath": "E:/Git/Rocket_Elevators_Smart_Contracts/contracts/MaterialProvider.sol",
+  "ast": {
+    "absolutePath": "/E/Git/Rocket_Elevators_Smart_Contracts/contracts/MaterialProvider.sol",
+    "exportedSymbols": {
+      "Materials": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "Materials",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "36:31:0"
+      }
+    ],
+    "src": "0:67:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/E/Git/Rocket_Elevators_Smart_Contracts/contracts/MaterialProvider.sol",
+    "exportedSymbols": {
+      "Materials": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "Materials",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "36:31:0"
+      }
+    ],
+    "src": "0:67:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-12-07T21:04:20.867Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
