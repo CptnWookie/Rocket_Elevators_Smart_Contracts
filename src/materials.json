@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "name": "Aluminum Bars",
+    "picture": "images/aluminumbar.png",
+    "quantity": 0,
+    "sku": "1000",
+    "brand": "Rio Tinto Alcan"
+  },
+  {
+    "id": 1,
+    "name": "Stainless Steel Sheets",
+    "picture": "images/stainlesssteelsheet.png",
+    "quantity": 0,
+    "sku": "1001",
+    "brand": "MetalsDepot"
+  },
+  {
+    "id": 2,
+    "name": "Springs",
+    "picture": "images/spring.png",
+    "quantity": 0,
+    "sku": "1002",
+    "brand": "EECO"
+  },
+  {
+    "id": 3,
+    "name": "Bumper Rubber Band",
+    "picture": "images/rubberband.png",
+    "quantity": 0,
+    "sku": "1003",
+    "brand": "Vestil"
+  },
+  {
+    "id": 4,
+    "name": "Interior Light Bulb",
+    "picture": "images/interiorlight.png",
+    "quantity": 0,
+    "sku": "1004",
+    "brand": "Philips"
+  },
+  {
+    "id": 5,
+    "name": "Display LED pannel",
+    "picture": "images/displayledpanel.png",
+    "quantity": 0,
+    "sku": "1005",
+    "brand": "Samsung Electronics"
+  }
+]
