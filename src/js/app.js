@@ -49,10 +49,6 @@ App = {
       },
 
   initContract: function() {
-<<<<<<< HEAD
-
-=======
->>>>>>> alex
     $.getJSON('Materials.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
       var MaterialsArtifact = data;
@@ -73,21 +69,12 @@ App = {
   },
 
   markAdopted: function() {
-<<<<<<< HEAD
-    var adoptionInstance;
-
-    App.contracts.Materials.deployed().then(function(instance) {
-      adoptionInstance = instance;
-    
-      return adoptionInstance.getAdopters.call();
-=======
     var materialsInstance;
 
     App.contracts.Materials.deployed().then(function(instance) {
       materialsInstance = instance;
 
       return materialsInstance.getAdopters.call();
->>>>>>> alex
     }).then(function(adopters) {
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {

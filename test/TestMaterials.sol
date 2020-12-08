@@ -1,35 +1,27 @@
 pragma solidity ^0.5.0;
+pragma experimental ABIEncoderV2;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "../contracts/Materials.sol";
+import "../contracts/ProjectOffice.sol";
 
 contract TestMaterials {
 
- Materials materials = Materials(DeployedAddresses.Materials());
+    // Materials materials = Materials(DeployedAddresses.Materials());
 
-     struct Command{
-        address commandId;
-        uint nbOfElevators;
-        uint nbOfColumns;
-        string quality;
-        string creation_date;
-    }
 
- address expectedAddress = address(this);
+    // address expectedAddress = address(this);
+    // uint expectedCount = 6;
 
- Command testCommand = Command({
-     commandId:123456,
-      nbOfElevators:2,
-      nbOfColumns:2,
-      quality:"Premium",
-      creation_date:"Today"
-      });
 
- function testCreateMaterialList() public {
-  address returnedAddress = materials.createMaterialList(testCommand);
+    // string[6] types = ["a", "b", "c", "d", "e", "f"];
+    // uint[6] quantities = [1, 2, 3, 4, 5, 6];
 
-  Assert.equal(returnedAddress, expectedAddress, "Address of the expected command should match what is returned.");
-}
+    // function testCreateMaterialList() public {
+    // uint returnedCount = materials.addMaterialToMaterialList(types, quantities);
+
+    // Assert.equal(returnedCount, expectedCount, "Expect all six materials to be there");
+    // }
 
 }
