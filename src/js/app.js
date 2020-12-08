@@ -3,20 +3,20 @@ App = {
   contracts: {},
 
   init: async function() {
-    // Load pets.
-    $.getJSON('../pets.json', function(data) {
-      var petsRow = $('#petsRow');
-      var petTemplate = $('#petTemplate');
+    // Load materials.
+    $.getJSON('../materials.json', function(data) {
+      var materialsRow = $('#materialsRow');
+      var materialsTemplate = $('#materialsTemplate');
 
       for (i = 0; i < data.length; i ++) {
-        petTemplate.find('.panel-title').text(data[i].name);
-        petTemplate.find('img').attr('src', data[i].picture);
-        petTemplate.find('.pet-breed').text(data[i].breed);
-        petTemplate.find('.pet-age').text(data[i].age);
-        petTemplate.find('.pet-location').text(data[i].location);
-        petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        materialsTemplate.find('.panel-title').text(data[i].name);
+        materialsTemplate.find('img').attr('src', data[i].picture);
+        materialsTemplate.find('.material-sku').text(data[i].sku);
+        materialsTemplate.find('.material-quantity').text(data[i].quantity);
+        materialsTemplate.find('.material-brand').text(data[i].brand);
+        materialsTemplate.find('.btn-adopt').attr('data-id', data[i].id);
 
-        petsRow.append(petTemplate.html());
+        materialsRow.append(materialsTemplate.html());
       }
     });
 
@@ -49,7 +49,10 @@ App = {
       },
 
   initContract: function() {
+<<<<<<< HEAD
 
+=======
+>>>>>>> alex
     $.getJSON('Materials.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
       var MaterialsArtifact = data;
@@ -70,12 +73,21 @@ App = {
   },
 
   markAdopted: function() {
+<<<<<<< HEAD
     var adoptionInstance;
 
     App.contracts.Materials.deployed().then(function(instance) {
       adoptionInstance = instance;
     
       return adoptionInstance.getAdopters.call();
+=======
+    var materialsInstance;
+
+    App.contracts.Materials.deployed().then(function(instance) {
+      materialsInstance = instance;
+
+      return materialsInstance.getAdopters.call();
+>>>>>>> alex
     }).then(function(adopters) {
       for (i = 0; i < adopters.length; i++) {
         if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
@@ -90,11 +102,28 @@ App = {
   handleAdopt: function(event) {
     event.preventDefault();
 
-    var petId = parseInt($(event.target).data('id'));
+    var materialsId = parseInt($(event.target).data('id'));
 
-    /*
-     * Replace me...
-     */
+    var materialsInstance;
+
+    web3.eth.getAccounts(function(error, accounts) {
+      if (error) {
+        console.log(error);
+      }
+
+      var account = accounts[0];
+
+      App.contracts.Materials.deployed().then(function(instance) {
+        materialsInstance = instance;
+
+        // Execute adopt as a transaction by sending account
+        return materialsInstance.adopt(materialsId, {from: account});
+      }).then(function(result) {
+        return App.markAdopted();
+      }).catch(function(err) {
+        console.log(err.message);
+      });
+    });
   }
 
 };
