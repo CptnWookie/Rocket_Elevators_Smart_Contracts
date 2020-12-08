@@ -11,9 +11,9 @@ App = {
       for (i = 0; i < data.length; i ++) {
         materialsTemplate.find('.panel-title').text(data[i].name);
         materialsTemplate.find('img').attr('src', data[i].picture);
-        materialsTemplate.find('.material-sku').text(data[i].sku);
-        materialsTemplate.find('.material-quantity').text(data[i].quantity);
-        materialsTemplate.find('.material-brand').text(data[i].brand);
+        materialsTemplate.find('.materials-sku').text(data[i].sku);
+        materialsTemplate.find('.materials-quantity').text(data[i].quantity);
+        materialsTemplate.find('.materials-brand').text(data[i].brand);
         materialsTemplate.find('.btn-adopt').attr('data-id', data[i].id);
 
         materialsRow.append(materialsTemplate.html());
@@ -65,7 +65,7 @@ App = {
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-primary', App.handleMaterialsList);
   },
 
   markAdopted: function() {
@@ -74,10 +74,10 @@ App = {
     App.contracts.Materials.deployed().then(function(instance) {
       materialsInstance = instance;
 
-      return materialsInstance.getAdopters.call();
-    }).then(function(adopters) {
-      for (i = 0; i < adopters.length; i++) {
-        if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
+      return materialsInstance.getMaterialList.call();
+    }).then(function(materials) {
+      for (i = 0; i < materials.length; i++) {
+        if (materials[i] !== '0x0000000000000000000000000000000000000000') {
           $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
         }
       }
@@ -86,7 +86,7 @@ App = {
     });
   },
 
-  handleAdopt: function(event) {
+  handleMaterialsList: function(event) {
     event.preventDefault();
 
     var materialsId = parseInt($(event.target).data('id'));
