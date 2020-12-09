@@ -15,13 +15,18 @@ contract ProjectOffice {
     }
 
     Components[] components;
+
     uint public componentsCount = 0;
 
-    function getComponents(uint index) public view returns (Components memory){
-        return components[index];
+    function getComponents(uint index) public view returns (address, uint64, uint64, uint64, uint64, uint64){
+        return (components[index].componentId, components[index].Controllers, components[index].Shafts,components[index].Doors,components[index].Buttons, components[index].Displays);
     }
 
-    constructor() public {
+    function getComponentsCount() public view returns (uint){
+        return componentsCount;
+    }
+
+    constructor() {
 
         Components memory m;
         m.componentId = msg.sender;
@@ -34,8 +39,7 @@ contract ProjectOffice {
         componentsCount++;
         components.push(m);
     }
-    //Emma
-    // addComponents by requester with input from the Order
+
     function addComponents(uint64 Batteries, uint64 Columns, uint64 Elevators, uint64 Floors) public
     {
         Components memory m;
