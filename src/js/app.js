@@ -1,4 +1,4 @@
-App = {
+var App = {
   web3Provider: null,
   contracts: {},
 
@@ -49,13 +49,25 @@ App = {
       },
 
   initContract: function() {
-    $.getJSON('Materials.json', function(data) {
+    $.getJSON('MaterialProvider.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
       var MaterialsArtifact = data;
       App.contracts.Materials = TruffleContract(MaterialsArtifact);
     
       // Set the provider for our contract
       App.contracts.Materials.setProvider(App.web3Provider);
+    
+      // Use our contract to retrieve and mark the adopted pets
+      return App.markAdopted();
+    });
+
+    $.getJSON('ProjectOffice.json', function(data) {
+      // Get the necessary contract artifact file and instantiate it with @truffle/contract
+      var ProjectOfficeArtifact = data;
+      App.contracts.ProjectOffice = TruffleContract(ProjectOfficeArtifact);
+    
+      // Set the provider for our contract
+      App.contracts.ProjectOffice.setProvider(App.web3Provider);
     
       // Use our contract to retrieve and mark the adopted pets
       return App.markAdopted();
@@ -69,21 +81,21 @@ App = {
   },
 
   markAdopted: function() {
-    var materialsInstance;
+    // var materialsInstance;
 
-    App.contracts.Materials.deployed().then(function(instance) {
-      materialsInstance = instance;
+    // App.contracts.Materials.deployed().then(function(instance) {
+    //   materialsInstance = instance;
 
-      return materialsInstance.getMaterialList.call();
-    }).then(function(materials) {
-      for (i = 0; i < materials.length; i++) {
-        if (materials[i] !== '0x0000000000000000000000000000000000000000') {
-          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
-        }
-      }
-    }).catch(function(err) {
-      console.log(err.message);
-    });
+    //   return materialsInstance.getMaterialList.call();
+    // }).then(function(materials) {
+    //   for (i = 0; i < materials.length; i++) {
+    //     if (materials[i].materialId !== '0x0000000000000000000000000000000000000000') {
+    //       $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+    //     }
+    //   }
+    // }).catch(function(err) {
+    //   console.log(err.message);
+    // });
   },
 
   handleMaterialsList: function(event) {
@@ -115,8 +127,40 @@ App = {
 
 };
 
+function getCommandInfos(item) {
+
+  document.getElementById("controllers").textContent = item.Controllers;
+  document.getElementById("shafts").textContent = item.Shafts;
+  document.getElementById("doors").textContent = item.doors;
+  document.getElementById("buttons").textContent = item.Buttons;
+  document.getElementById("displays").textContent = item.Displays;
+
+  toggleActive(this)
+}
+
+
 $(function() {
   $(window).load(function() {
     App.init();
+
+      App.contracts.ProjectOffice.deployed().then(function(instance) {
+        projectInstance = instance;
+      
+      return projectInstance.componentsCount().call();
+      }).then(function (error, count) {
+
+          if (error)
+              console.log(error)
+          else {
+              for (var i = 0; i < count; i++) {  
+                      var component = projectInstance.getComponents(count).call();
+                      addItemToList(component.componentId, "command-list", getCommandInfos(component))
+              }
+
+          }
+    });
+  
+
+
   });
 });

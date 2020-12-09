@@ -9,60 +9,82 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <div class="row">
-        <!-- <div class="col-xs-12 col-sm-8 col-sm-push-2"> -->
+        <nav class="teal">
+            <div class="nav-wrapper">
+                <!-- <a href="#" class="brand-logo right">Logo</a> -->
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#">Material Provider</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h2>Material</h2>
         <div class="row">
-          <br/>
-          <h1 class="text-center">Materials List</h1>
-          <br/>
+            <div class="col s6">
+                <label>Address: </label>
+                <p id="car-factory-address">0xcE94908BFF18F5D0a58042325e73Ca3caF8285cE</p>
+            </div>
         </div>
-        <div class="row text-center">
-          <button class="btn btn-primary btn-lg mx-auto" type="button" data-id="1">Generate</button>
-          <button class="btn btn-danger btn-lg mx-auto" type="button" data-id="2">Submit</button>
-          <hr/>
-          <br/>
+        <div class="row">
+            <div class="col s6">
+                <div id="command-list" class="collection with-header">
+                    <p class="collection-header">Command list</p>
+                </div>
+            </div>
+            <div class="col s6">
+                <label>Controllers: </label><input type="text" id="controllers" placeholder="Controllers Qty">
+                <label>Shafts: </label><input type="text" id="shafts" placeholder="Shafts Qty">
+                <label>Doors: </label><input type="text" id="doors" placeholder="Doors Qty">
+                <label>Buttons: </label><input type="text" id="buttons" placeholder="Buttont Qty">
+                <label>Displays: </label><input type="text" id="create-car-serial-number" placeholder="Displays Qty">
+                <button id="build-car" class="waves-effect waves-light btn">Confirm List</button>
+            </div>
         </div>
-      </div>
-
-      <div id="materialsRow" class="row">
-        <!-- MATERIALS LOAD HERE -->
-      </div>
+        <div class="row">
+            <div class="col s6">
+                <div id="car-list" class="collection with-header">
+                    <p class="collection-header">Materials lists</p>
+                </div>
+            </div>
+            <div class="col s6">
+                <div id="car-list-details">
+                    <label>Aluminium Bars:</label>
+                    <p id="car-details-address"></p>
+                    <label>Stainless Steel Sheets:</label>
+                    <p id="car-details-serial-num"></p>
+                    <label>Bumper Rubber Bands:</label>
+                    <p id="car-details-parts"></p>
+                    <label>Interior light bulbs:</label>
+                    <p id="car-details-creation-date"></p>
+                    <label>Display LEDs:</label>
+                    <p id="car-details-serial-num"></p>
+                    <label>Springs:</label>
+                    <p id="car-details-serial-num"></p>
+                    <label>Creation Date:</label>
+                    <p id="car-details-serial-num"></p>
+                    <input id="car-change-ownership-input" type="text" placeholder="Insert address">
+                    <button id="car-change-ownership-btn" class="waves-effect waves-light btn">Create Material List</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div id="materialsTemplate" style="display: none;">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="panel panel-default panel-materials">
-          <div class="panel-heading">
-            <h3 class="panel-title">Aluminum Bars</h3>
-          </div>
-          <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="images/aluminumbar.png" data-holder-rendered="true">
-            <br/><br/>
-            <strong>SKU</strong>: <span class="materials-sku">1000</span><br/>
-            <strong>Quantity</strong>: <span class="materials-quantity">0</span><br/>
-            <strong>Brand</strong>: <span class="materials-brand">Rio Tinto Alcan</span><br/><br/>
-            <!-- <button class="btn btn-default btn-adopt" type="button" data-id="0">Adopt</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+</body>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/web3.min.js"></script>
+   <script src="js/truffle-contract.js"></script>
+   <script src="js/app.js"></script>
