@@ -1,7 +1,8 @@
-// SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0 <0.8.0;
 pragma experimental ABIEncoderV2;
 import "./ProjectOffice.sol";
+// SPDX-License-Identifier: MIT
+
 
 
 contract MaterialProvider {
@@ -18,9 +19,9 @@ contract MaterialProvider {
     }
 
     Materials[] materials;
-    uint public materialListCount;
+    uint public materialListCount = 0 ;
 
-     function createMaterials( uint controllers, uint shafts, uint doors, uint buttons, uint dislays ) public returns (uint){
+     function createMaterials( uint64 controllers, uint64 shafts, uint64 doors, uint64 buttons, uint64 displays ) public returns (uint){
 
         
          uint64 aluminiumBars = shafts*4;
@@ -29,18 +30,13 @@ contract MaterialProvider {
          uint64 lightBulbs = shafts*4;
          uint64 lEDs = buttons + displays + controllers;
          uint64 springs = doors*2;
-         uint256 creation_date = block.timestamp;
+        uint256 creation_date = block.timestamp;
         
          Materials memory new_material = Materials(msg.sender, aluminiumBars, stainlessSteel, rubber, lightBulbs, lEDs, springs, creation_date);
 
-        materials.push(new_material);
+        materials[materialListCount] = new_material;
         materialListCount++;
 
         return  materialListCount;
          }
-     }
-
-  //  function getMaterialList() public view returns (Materials[] memory ){
-      //  return materials;
-    //}
 }

@@ -1,4 +1,4 @@
-pragma solidity >=0.4.22 <0.8.0;
+pragma solidity >=0.5.0 <0.8.0;
 pragma experimental ABIEncoderV2;
 //SPDX-License-Identifier: MIT
 contract ProjectOffice {
@@ -26,7 +26,7 @@ contract ProjectOffice {
         return componentsCount;
     }
 
-    constructor() {
+    constructor() public {
 
         Components memory m;
         m.componentId = msg.sender;
@@ -52,7 +52,7 @@ contract ProjectOffice {
 
         componentsCount++;
         components.push(m);
-        // Get the order details by orderNumber call
+
 
     }
 }
