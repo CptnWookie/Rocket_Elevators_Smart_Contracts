@@ -125,14 +125,14 @@
     "absolutePath": "/C/Users/tardi/Rocket_Elevators_Smart_Contracts/contracts/ProjectOffice.sol",
     "exportedSymbols": {
       "ProjectOffice": [
-        420
+        454
       ]
     },
-    "id": 421,
+    "id": 455,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 215,
+        "id": 249,
         "literals": [
           "solidity",
           ">=",
@@ -146,7 +146,7 @@
         "src": "0:31:2"
       },
       {
-        "id": 216,
+        "id": 250,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -160,19 +160,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 420,
+        "id": 454,
         "linearizedBaseContracts": [
-          420
+          454
         ],
         "name": "ProjectOffice",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 218,
+            "id": 252,
             "name": "requester",
             "nodeType": "VariableDeclaration",
-            "scope": 420,
+            "scope": 454,
             "src": "132:17:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -181,7 +181,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 217,
+              "id": 251,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "132:7:2",
@@ -196,14 +196,14 @@
           },
           {
             "canonicalName": "ProjectOffice.Components",
-            "id": 231,
+            "id": 265,
             "members": [
               {
                 "constant": false,
-                "id": 220,
+                "id": 254,
                 "name": "componentId",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "187:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -212,7 +212,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 219,
+                  "id": 253,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "187:7:2",
@@ -227,10 +227,10 @@
               },
               {
                 "constant": false,
-                "id": 222,
+                "id": 256,
                 "name": "Controllers",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "217:18:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -239,7 +239,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 221,
+                  "id": 255,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "217:6:2",
@@ -253,10 +253,10 @@
               },
               {
                 "constant": false,
-                "id": 224,
+                "id": 258,
                 "name": "Shafts",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "246:13:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -265,7 +265,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 223,
+                  "id": 257,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "246:6:2",
@@ -279,10 +279,10 @@
               },
               {
                 "constant": false,
-                "id": 226,
+                "id": 260,
                 "name": "Doors",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "270:12:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -291,7 +291,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 225,
+                  "id": 259,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "270:6:2",
@@ -305,10 +305,10 @@
               },
               {
                 "constant": false,
-                "id": 228,
+                "id": 262,
                 "name": "Buttons",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "293:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -317,7 +317,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 227,
+                  "id": 261,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "293:6:2",
@@ -331,10 +331,10 @@
               },
               {
                 "constant": false,
-                "id": 230,
+                "id": 264,
                 "name": "Displays",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "318:15:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -343,7 +343,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 229,
+                  "id": 263,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "318:6:2",
@@ -358,42 +358,42 @@
             ],
             "name": "Components",
             "nodeType": "StructDefinition",
-            "scope": 420,
+            "scope": 454,
             "src": "158:183:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 234,
+            "id": 268,
             "name": "components",
             "nodeType": "VariableDeclaration",
-            "scope": 420,
+            "scope": 454,
             "src": "349:23:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
               "typeString": "struct ProjectOffice.Components[]"
             },
             "typeName": {
               "baseType": {
                 "contractScope": null,
-                "id": 232,
+                "id": 266,
                 "name": "Components",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 231,
+                "referencedDeclaration": 265,
                 "src": "349:10:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Components_$231_storage_ptr",
+                  "typeIdentifier": "t_struct$_Components_$265_storage_ptr",
                   "typeString": "struct ProjectOffice.Components"
                 }
               },
-              "id": 233,
+              "id": 267,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "349:12:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage_ptr",
                 "typeString": "struct ProjectOffice.Components[]"
               }
             },
@@ -402,10 +402,10 @@
           },
           {
             "constant": false,
-            "id": 237,
+            "id": 271,
             "name": "componentsCount",
             "nodeType": "VariableDeclaration",
-            "scope": 420,
+            "scope": 454,
             "src": "381:31:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -414,7 +414,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 235,
+              "id": 269,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "381:4:2",
@@ -426,7 +426,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 236,
+              "id": 270,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -445,7 +445,7 @@
           },
           {
             "body": {
-              "id": 280,
+              "id": 314,
               "nodeType": "Block",
               "src": "525:192:2",
               "statements": [
@@ -459,25 +459,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 254,
+                            "id": 288,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "544:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 256,
+                          "id": 290,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 255,
+                            "id": 289,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "555:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -491,18 +491,18 @@
                           "nodeType": "IndexAccess",
                           "src": "544:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 257,
+                        "id": 291,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "componentId",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 220,
+                        "referencedDeclaration": 254,
                         "src": "544:29:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -515,25 +515,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 258,
+                            "id": 292,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "575:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 260,
+                          "id": 294,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 259,
+                            "id": 293,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "586:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -547,18 +547,18 @@
                           "nodeType": "IndexAccess",
                           "src": "575:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 261,
+                        "id": 295,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Controllers",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 222,
+                        "referencedDeclaration": 256,
                         "src": "575:29:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -571,25 +571,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 262,
+                            "id": 296,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "606:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 264,
+                          "id": 298,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 263,
+                            "id": 297,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "617:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -603,18 +603,18 @@
                           "nodeType": "IndexAccess",
                           "src": "606:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 265,
+                        "id": 299,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Shafts",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 224,
+                        "referencedDeclaration": 258,
                         "src": "606:24:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -627,25 +627,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 266,
+                            "id": 300,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "631:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 268,
+                          "id": 302,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 267,
+                            "id": 301,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "642:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -659,18 +659,18 @@
                           "nodeType": "IndexAccess",
                           "src": "631:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 269,
+                        "id": 303,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Doors",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 226,
+                        "referencedDeclaration": 260,
                         "src": "631:23:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -683,25 +683,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 270,
+                            "id": 304,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "655:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 272,
+                          "id": 306,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 271,
+                            "id": 305,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "666:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -715,18 +715,18 @@
                           "nodeType": "IndexAccess",
                           "src": "655:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 273,
+                        "id": 307,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Buttons",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 228,
+                        "referencedDeclaration": 262,
                         "src": "655:25:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -739,25 +739,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 274,
+                            "id": 308,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "682:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 276,
+                          "id": 310,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 275,
+                            "id": 309,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "693:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -771,18 +771,18 @@
                           "nodeType": "IndexAccess",
                           "src": "682:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 277,
+                        "id": 311,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Displays",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 230,
+                        "referencedDeclaration": 264,
                         "src": "682:26:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -790,7 +790,7 @@
                         }
                       }
                     ],
-                    "id": 278,
+                    "id": 312,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -803,30 +803,30 @@
                       "typeString": "tuple(address,uint64,uint64,uint64,uint64,uint64)"
                     }
                   },
-                  "functionReturnParameters": 253,
-                  "id": 279,
+                  "functionReturnParameters": 287,
+                  "id": 313,
                   "nodeType": "Return",
                   "src": "536:173:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 281,
+            "id": 315,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getComponents",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 240,
+              "id": 274,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 239,
+                  "id": 273,
                   "name": "index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "444:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -835,7 +835,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 238,
+                    "id": 272,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "444:4:2",
@@ -851,15 +851,15 @@
               "src": "443:12:2"
             },
             "returnParameters": {
-              "id": 253,
+              "id": 287,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 242,
+                  "id": 276,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "477:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -868,7 +868,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 241,
+                    "id": 275,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "477:7:2",
@@ -883,10 +883,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 244,
+                  "id": 278,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "486:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -895,7 +895,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 243,
+                    "id": 277,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "486:6:2",
@@ -909,10 +909,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 246,
+                  "id": 280,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "494:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -921,7 +921,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 245,
+                    "id": 279,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "494:6:2",
@@ -935,10 +935,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 248,
+                  "id": 282,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "502:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -947,7 +947,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 247,
+                    "id": 281,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "502:6:2",
@@ -961,10 +961,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 250,
+                  "id": 284,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "510:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -973,7 +973,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 249,
+                    "id": 283,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "510:6:2",
@@ -987,10 +987,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 252,
+                  "id": 286,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "518:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -999,7 +999,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 251,
+                    "id": 285,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "518:6:2",
@@ -1014,7 +1014,7 @@
               ],
               "src": "476:49:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "421:296:2",
             "stateMutability": "view",
             "superFunction": null,
@@ -1022,54 +1022,54 @@
           },
           {
             "body": {
-              "id": 288,
+              "id": 322,
               "nodeType": "Block",
               "src": "781:41:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 286,
+                    "id": 320,
                     "name": "componentsCount",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 237,
+                    "referencedDeclaration": 271,
                     "src": "799:15:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 285,
-                  "id": 287,
+                  "functionReturnParameters": 319,
+                  "id": 321,
                   "nodeType": "Return",
                   "src": "792:22:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 289,
+            "id": 323,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getComponentsCount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 282,
+              "id": 316,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "752:2:2"
             },
             "returnParameters": {
-              "id": 285,
+              "id": 319,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 284,
+                  "id": 318,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 289,
+                  "scope": 323,
                   "src": "776:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1078,7 +1078,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 283,
+                    "id": 317,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "776:4:2",
@@ -1093,7 +1093,7 @@
               ],
               "src": "775:6:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "725:97:2",
             "stateMutability": "view",
             "superFunction": null,
@@ -1101,37 +1101,37 @@
           },
           {
             "body": {
-              "id": 341,
+              "id": 375,
               "nodeType": "Block",
               "src": "851:258:2",
               "statements": [
                 {
                   "assignments": [
-                    293
+                    327
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 293,
+                      "id": 327,
                       "name": "m",
                       "nodeType": "VariableDeclaration",
-                      "scope": 341,
+                      "scope": 375,
                       "src": "864:19:2",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                        "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                         "typeString": "struct ProjectOffice.Components"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 292,
+                        "id": 326,
                         "name": "Components",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 231,
+                        "referencedDeclaration": 265,
                         "src": "864:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_storage_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_storage_ptr",
                           "typeString": "struct ProjectOffice.Components"
                         }
                       },
@@ -1139,7 +1139,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 294,
+                  "id": 328,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "864:19:2"
@@ -1147,7 +1147,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 300,
+                    "id": 334,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1156,25 +1156,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 295,
+                        "id": 329,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "894:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 297,
+                      "id": 331,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "componentId",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 220,
+                      "referencedDeclaration": 254,
                       "src": "894:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1187,18 +1187,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 298,
+                        "id": 332,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 435,
+                        "referencedDeclaration": 469,
                         "src": "910:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 299,
+                      "id": 333,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1218,14 +1218,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 301,
+                  "id": 335,
                   "nodeType": "ExpressionStatement",
                   "src": "894:26:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 306,
+                    "id": 340,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1234,25 +1234,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 302,
+                        "id": 336,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "931:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 304,
+                      "id": 338,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Shafts",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 224,
+                      "referencedDeclaration": 258,
                       "src": "931:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1264,7 +1264,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 305,
+                      "id": 339,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1285,14 +1285,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 307,
+                  "id": 341,
                   "nodeType": "ExpressionStatement",
                   "src": "931:12:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 312,
+                    "id": 346,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1301,25 +1301,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 308,
+                        "id": 342,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "954:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 310,
+                      "id": 344,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Controllers",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 222,
+                      "referencedDeclaration": 256,
                       "src": "954:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1331,7 +1331,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "32",
-                      "id": 311,
+                      "id": 345,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1352,14 +1352,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 313,
+                  "id": 347,
                   "nodeType": "ExpressionStatement",
                   "src": "954:17:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 318,
+                    "id": 352,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1368,25 +1368,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 314,
+                        "id": 348,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "982:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 316,
+                      "id": 350,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Doors",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 226,
+                      "referencedDeclaration": 260,
                       "src": "982:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1398,7 +1398,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "33",
-                      "id": 317,
+                      "id": 351,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1419,14 +1419,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 319,
+                  "id": 353,
                   "nodeType": "ExpressionStatement",
                   "src": "982:11:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 324,
+                    "id": 358,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1435,25 +1435,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 320,
+                        "id": 354,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "1004:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 322,
+                      "id": 356,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Buttons",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 228,
+                      "referencedDeclaration": 262,
                       "src": "1004:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1465,7 +1465,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "34",
-                      "id": 323,
+                      "id": 357,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1486,14 +1486,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 325,
+                  "id": 359,
                   "nodeType": "ExpressionStatement",
                   "src": "1004:13:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 330,
+                    "id": 364,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1502,25 +1502,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 326,
+                        "id": 360,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "1028:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 328,
+                      "id": 362,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Displays",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 230,
+                      "referencedDeclaration": 264,
                       "src": "1028:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1532,7 +1532,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "35",
-                      "id": 329,
+                      "id": 363,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1553,14 +1553,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 331,
+                  "id": 365,
                   "nodeType": "ExpressionStatement",
                   "src": "1028:14:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 333,
+                    "id": 367,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1571,11 +1571,11 @@
                     "src": "1055:17:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 332,
+                      "id": 366,
                       "name": "componentsCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 237,
+                      "referencedDeclaration": 271,
                       "src": "1055:15:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1587,7 +1587,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 334,
+                  "id": 368,
                   "nodeType": "ExpressionStatement",
                   "src": "1055:17:2"
                 },
@@ -1597,14 +1597,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 338,
+                        "id": 372,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "1099:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       }
@@ -1612,24 +1612,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 335,
+                        "id": 369,
                         "name": "components",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 234,
+                        "referencedDeclaration": 268,
                         "src": "1083:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                           "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                         }
                       },
-                      "id": 337,
+                      "id": 371,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1639,11 +1639,11 @@
                       "referencedDeclaration": null,
                       "src": "1083:15:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$231_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$265_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct ProjectOffice.Components storage ref) returns (uint256)"
                       }
                     },
-                    "id": 339,
+                    "id": 373,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1657,32 +1657,32 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 340,
+                  "id": 374,
                   "nodeType": "ExpressionStatement",
                   "src": "1083:18:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 342,
+            "id": 376,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 290,
+              "id": 324,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "841:2:2"
             },
             "returnParameters": {
-              "id": 291,
+              "id": 325,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "851:0:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "830:279:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1690,37 +1690,37 @@
           },
           {
             "body": {
-              "id": 418,
+              "id": 452,
               "nodeType": "Block",
               "src": "1219:344:2",
               "statements": [
                 {
                   "assignments": [
-                    354
+                    388
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 354,
+                      "id": 388,
                       "name": "m",
                       "nodeType": "VariableDeclaration",
-                      "scope": 418,
+                      "scope": 452,
                       "src": "1230:19:2",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                        "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                         "typeString": "struct ProjectOffice.Components"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 353,
+                        "id": 387,
                         "name": "Components",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 231,
+                        "referencedDeclaration": 265,
                         "src": "1230:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_storage_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_storage_ptr",
                           "typeString": "struct ProjectOffice.Components"
                         }
                       },
@@ -1728,7 +1728,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 355,
+                  "id": 389,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "1230:19:2"
@@ -1736,7 +1736,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 361,
+                    "id": 395,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1745,25 +1745,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 356,
+                        "id": 390,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1260:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 358,
+                      "id": 392,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "componentId",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 220,
+                      "referencedDeclaration": 254,
                       "src": "1260:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1776,18 +1776,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 359,
+                        "id": 393,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 435,
+                        "referencedDeclaration": 469,
                         "src": "1276:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 360,
+                      "id": 394,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1807,14 +1807,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 362,
+                  "id": 396,
                   "nodeType": "ExpressionStatement",
                   "src": "1260:26:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 367,
+                    "id": 401,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1823,25 +1823,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 363,
+                        "id": 397,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1297:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 365,
+                      "id": 399,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Shafts",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 224,
+                      "referencedDeclaration": 258,
                       "src": "1297:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1852,11 +1852,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 366,
+                      "id": 400,
                       "name": "Elevators",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
+                      "referencedDeclaration": 382,
                       "src": "1308:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1869,14 +1869,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 368,
+                  "id": 402,
                   "nodeType": "ExpressionStatement",
                   "src": "1297:20:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 373,
+                    "id": 407,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1885,25 +1885,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 369,
+                        "id": 403,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1328:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 371,
+                      "id": 405,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Controllers",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 222,
+                      "referencedDeclaration": 256,
                       "src": "1328:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1914,11 +1914,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 372,
+                      "id": 406,
                       "name": "Batteries",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 344,
+                      "referencedDeclaration": 378,
                       "src": "1344:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1931,14 +1931,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 374,
+                  "id": 408,
                   "nodeType": "ExpressionStatement",
                   "src": "1328:25:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 387,
+                    "id": 421,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1947,25 +1947,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 375,
+                        "id": 409,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1364:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 377,
+                      "id": 411,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Doors",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 226,
+                      "referencedDeclaration": 260,
                       "src": "1364:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -1980,7 +1980,7 @@
                         "typeIdentifier": "t_uint64",
                         "typeString": "uint64"
                       },
-                      "id": 386,
+                      "id": 420,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1994,18 +1994,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 380,
+                            "id": 414,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 378,
+                              "id": 412,
                               "name": "Elevators",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 348,
+                              "referencedDeclaration": 382,
                               "src": "1375:9:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -2017,7 +2017,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "32",
-                              "id": 379,
+                              "id": 413,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2039,7 +2039,7 @@
                             }
                           }
                         ],
-                        "id": 381,
+                        "id": 415,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -2063,18 +2063,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 384,
+                            "id": 418,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 382,
+                              "id": 416,
                               "name": "Floors",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 350,
+                              "referencedDeclaration": 384,
                               "src": "1393:6:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -2086,7 +2086,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "32",
-                              "id": 383,
+                              "id": 417,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2108,7 +2108,7 @@
                             }
                           }
                         ],
-                        "id": 385,
+                        "id": 419,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -2133,14 +2133,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 388,
+                  "id": 422,
                   "nodeType": "ExpressionStatement",
                   "src": "1364:40:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 401,
+                    "id": 435,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2149,25 +2149,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 389,
+                        "id": 423,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1415:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 391,
+                      "id": 425,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Buttons",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 228,
+                      "referencedDeclaration": 262,
                       "src": "1415:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -2182,7 +2182,7 @@
                         "typeIdentifier": "t_uint64",
                         "typeString": "uint64"
                       },
-                      "id": 400,
+                      "id": 434,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2196,18 +2196,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 394,
+                            "id": 428,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 392,
+                              "id": 426,
                               "name": "Elevators",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 348,
+                              "referencedDeclaration": 382,
                               "src": "1428:9:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -2219,7 +2219,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "38",
-                              "id": 393,
+                              "id": 427,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2241,7 +2241,7 @@
                             }
                           }
                         ],
-                        "id": 395,
+                        "id": 429,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -2265,18 +2265,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 398,
+                            "id": 432,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 396,
+                              "id": 430,
                               "name": "Columns",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 346,
+                              "referencedDeclaration": 380,
                               "src": "1446:7:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -2288,7 +2288,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "3136",
-                              "id": 397,
+                              "id": 431,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2310,7 +2310,7 @@
                             }
                           }
                         ],
-                        "id": 399,
+                        "id": 433,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -2335,14 +2335,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 402,
+                  "id": 436,
                   "nodeType": "ExpressionStatement",
                   "src": "1415:44:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 407,
+                    "id": 441,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2351,25 +2351,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 403,
+                        "id": 437,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1470:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 405,
+                      "id": 439,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Displays",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 230,
+                      "referencedDeclaration": 264,
                       "src": "1470:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -2380,11 +2380,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 406,
+                      "id": 440,
                       "name": "Elevators",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
+                      "referencedDeclaration": 382,
                       "src": "1483:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -2397,14 +2397,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 408,
+                  "id": 442,
                   "nodeType": "ExpressionStatement",
                   "src": "1470:22:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 410,
+                    "id": 444,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2415,11 +2415,11 @@
                     "src": "1505:17:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 409,
+                      "id": 443,
                       "name": "componentsCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 237,
+                      "referencedDeclaration": 271,
                       "src": "1505:15:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2431,7 +2431,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 411,
+                  "id": 445,
                   "nodeType": "ExpressionStatement",
                   "src": "1505:17:2"
                 },
@@ -2441,14 +2441,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 415,
+                        "id": 449,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1549:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       }
@@ -2456,24 +2456,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 412,
+                        "id": 446,
                         "name": "components",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 234,
+                        "referencedDeclaration": 268,
                         "src": "1533:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                           "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                         }
                       },
-                      "id": 414,
+                      "id": 448,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2483,11 +2483,11 @@
                       "referencedDeclaration": null,
                       "src": "1533:15:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$231_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$265_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct ProjectOffice.Components storage ref) returns (uint256)"
                       }
                     },
-                    "id": 416,
+                    "id": 450,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2501,29 +2501,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 417,
+                  "id": 451,
                   "nodeType": "ExpressionStatement",
                   "src": "1533:18:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 419,
+            "id": 453,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "addComponents",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 351,
+              "id": 385,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 344,
+                  "id": 378,
                   "name": "Batteries",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1140:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2532,7 +2532,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 343,
+                    "id": 377,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1140:6:2",
@@ -2546,10 +2546,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 346,
+                  "id": 380,
                   "name": "Columns",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1158:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2558,7 +2558,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 345,
+                    "id": 379,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1158:6:2",
@@ -2572,10 +2572,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 348,
+                  "id": 382,
                   "name": "Elevators",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1174:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2584,7 +2584,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 347,
+                    "id": 381,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1174:6:2",
@@ -2598,10 +2598,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 350,
+                  "id": 384,
                   "name": "Floors",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1192:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2610,7 +2610,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 349,
+                    "id": 383,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1192:6:2",
@@ -2626,19 +2626,19 @@
               "src": "1139:67:2"
             },
             "returnParameters": {
-              "id": 352,
+              "id": 386,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1219:0:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "1117:446:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 421,
+        "scope": 455,
         "src": "100:1466:2"
       }
     ],
@@ -2648,14 +2648,14 @@
     "absolutePath": "/C/Users/tardi/Rocket_Elevators_Smart_Contracts/contracts/ProjectOffice.sol",
     "exportedSymbols": {
       "ProjectOffice": [
-        420
+        454
       ]
     },
-    "id": 421,
+    "id": 455,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 215,
+        "id": 249,
         "literals": [
           "solidity",
           ">=",
@@ -2669,7 +2669,7 @@
         "src": "0:31:2"
       },
       {
-        "id": 216,
+        "id": 250,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -2683,19 +2683,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 420,
+        "id": 454,
         "linearizedBaseContracts": [
-          420
+          454
         ],
         "name": "ProjectOffice",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 218,
+            "id": 252,
             "name": "requester",
             "nodeType": "VariableDeclaration",
-            "scope": 420,
+            "scope": 454,
             "src": "132:17:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2704,7 +2704,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 217,
+              "id": 251,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "132:7:2",
@@ -2719,14 +2719,14 @@
           },
           {
             "canonicalName": "ProjectOffice.Components",
-            "id": 231,
+            "id": 265,
             "members": [
               {
                 "constant": false,
-                "id": 220,
+                "id": 254,
                 "name": "componentId",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "187:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2735,7 +2735,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 219,
+                  "id": 253,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "187:7:2",
@@ -2750,10 +2750,10 @@
               },
               {
                 "constant": false,
-                "id": 222,
+                "id": 256,
                 "name": "Controllers",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "217:18:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2762,7 +2762,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 221,
+                  "id": 255,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "217:6:2",
@@ -2776,10 +2776,10 @@
               },
               {
                 "constant": false,
-                "id": 224,
+                "id": 258,
                 "name": "Shafts",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "246:13:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2788,7 +2788,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 223,
+                  "id": 257,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "246:6:2",
@@ -2802,10 +2802,10 @@
               },
               {
                 "constant": false,
-                "id": 226,
+                "id": 260,
                 "name": "Doors",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "270:12:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2814,7 +2814,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 225,
+                  "id": 259,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "270:6:2",
@@ -2828,10 +2828,10 @@
               },
               {
                 "constant": false,
-                "id": 228,
+                "id": 262,
                 "name": "Buttons",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "293:14:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2840,7 +2840,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 227,
+                  "id": 261,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "293:6:2",
@@ -2854,10 +2854,10 @@
               },
               {
                 "constant": false,
-                "id": 230,
+                "id": 264,
                 "name": "Displays",
                 "nodeType": "VariableDeclaration",
-                "scope": 231,
+                "scope": 265,
                 "src": "318:15:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2866,7 +2866,7 @@
                   "typeString": "uint64"
                 },
                 "typeName": {
-                  "id": 229,
+                  "id": 263,
                   "name": "uint64",
                   "nodeType": "ElementaryTypeName",
                   "src": "318:6:2",
@@ -2881,42 +2881,42 @@
             ],
             "name": "Components",
             "nodeType": "StructDefinition",
-            "scope": 420,
+            "scope": 454,
             "src": "158:183:2",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 234,
+            "id": 268,
             "name": "components",
             "nodeType": "VariableDeclaration",
-            "scope": 420,
+            "scope": 454,
             "src": "349:23:2",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
               "typeString": "struct ProjectOffice.Components[]"
             },
             "typeName": {
               "baseType": {
                 "contractScope": null,
-                "id": 232,
+                "id": 266,
                 "name": "Components",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 231,
+                "referencedDeclaration": 265,
                 "src": "349:10:2",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Components_$231_storage_ptr",
+                  "typeIdentifier": "t_struct$_Components_$265_storage_ptr",
                   "typeString": "struct ProjectOffice.Components"
                 }
               },
-              "id": 233,
+              "id": 267,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "349:12:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage_ptr",
                 "typeString": "struct ProjectOffice.Components[]"
               }
             },
@@ -2925,10 +2925,10 @@
           },
           {
             "constant": false,
-            "id": 237,
+            "id": 271,
             "name": "componentsCount",
             "nodeType": "VariableDeclaration",
-            "scope": 420,
+            "scope": 454,
             "src": "381:31:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2937,7 +2937,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 235,
+              "id": 269,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "381:4:2",
@@ -2949,7 +2949,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30",
-              "id": 236,
+              "id": 270,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2968,7 +2968,7 @@
           },
           {
             "body": {
-              "id": 280,
+              "id": 314,
               "nodeType": "Block",
               "src": "525:192:2",
               "statements": [
@@ -2982,25 +2982,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 254,
+                            "id": 288,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "544:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 256,
+                          "id": 290,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 255,
+                            "id": 289,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "555:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3014,18 +3014,18 @@
                           "nodeType": "IndexAccess",
                           "src": "544:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 257,
+                        "id": 291,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "componentId",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 220,
+                        "referencedDeclaration": 254,
                         "src": "544:29:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -3038,25 +3038,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 258,
+                            "id": 292,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "575:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 260,
+                          "id": 294,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 259,
+                            "id": 293,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "586:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3070,18 +3070,18 @@
                           "nodeType": "IndexAccess",
                           "src": "575:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 261,
+                        "id": 295,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Controllers",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 222,
+                        "referencedDeclaration": 256,
                         "src": "575:29:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -3094,25 +3094,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 262,
+                            "id": 296,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "606:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 264,
+                          "id": 298,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 263,
+                            "id": 297,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "617:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3126,18 +3126,18 @@
                           "nodeType": "IndexAccess",
                           "src": "606:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 265,
+                        "id": 299,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Shafts",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 224,
+                        "referencedDeclaration": 258,
                         "src": "606:24:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -3150,25 +3150,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 266,
+                            "id": 300,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "631:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 268,
+                          "id": 302,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 267,
+                            "id": 301,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "642:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3182,18 +3182,18 @@
                           "nodeType": "IndexAccess",
                           "src": "631:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 269,
+                        "id": 303,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Doors",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 226,
+                        "referencedDeclaration": 260,
                         "src": "631:23:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -3206,25 +3206,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 270,
+                            "id": 304,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "655:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 272,
+                          "id": 306,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 271,
+                            "id": 305,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "666:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3238,18 +3238,18 @@
                           "nodeType": "IndexAccess",
                           "src": "655:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 273,
+                        "id": 307,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Buttons",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 228,
+                        "referencedDeclaration": 262,
                         "src": "655:25:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -3262,25 +3262,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 274,
+                            "id": 308,
                             "name": "components",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 234,
+                            "referencedDeclaration": 268,
                             "src": "682:10:2",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                               "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                             }
                           },
-                          "id": 276,
+                          "id": 310,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 275,
+                            "id": 309,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 239,
+                            "referencedDeclaration": 273,
                             "src": "693:5:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3294,18 +3294,18 @@
                           "nodeType": "IndexAccess",
                           "src": "682:17:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Components_$231_storage",
+                            "typeIdentifier": "t_struct$_Components_$265_storage",
                             "typeString": "struct ProjectOffice.Components storage ref"
                           }
                         },
-                        "id": 277,
+                        "id": 311,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "Displays",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 230,
+                        "referencedDeclaration": 264,
                         "src": "682:26:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint64",
@@ -3313,7 +3313,7 @@
                         }
                       }
                     ],
-                    "id": 278,
+                    "id": 312,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -3326,30 +3326,30 @@
                       "typeString": "tuple(address,uint64,uint64,uint64,uint64,uint64)"
                     }
                   },
-                  "functionReturnParameters": 253,
-                  "id": 279,
+                  "functionReturnParameters": 287,
+                  "id": 313,
                   "nodeType": "Return",
                   "src": "536:173:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 281,
+            "id": 315,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getComponents",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 240,
+              "id": 274,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 239,
+                  "id": 273,
                   "name": "index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "444:10:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3358,7 +3358,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 238,
+                    "id": 272,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "444:4:2",
@@ -3374,15 +3374,15 @@
               "src": "443:12:2"
             },
             "returnParameters": {
-              "id": 253,
+              "id": 287,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 242,
+                  "id": 276,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "477:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3391,7 +3391,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 241,
+                    "id": 275,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "477:7:2",
@@ -3406,10 +3406,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 244,
+                  "id": 278,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "486:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3418,7 +3418,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 243,
+                    "id": 277,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "486:6:2",
@@ -3432,10 +3432,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 246,
+                  "id": 280,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "494:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3444,7 +3444,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 245,
+                    "id": 279,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "494:6:2",
@@ -3458,10 +3458,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 248,
+                  "id": 282,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "502:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3470,7 +3470,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 247,
+                    "id": 281,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "502:6:2",
@@ -3484,10 +3484,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 250,
+                  "id": 284,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "510:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3496,7 +3496,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 249,
+                    "id": 283,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "510:6:2",
@@ -3510,10 +3510,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 252,
+                  "id": 286,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 281,
+                  "scope": 315,
                   "src": "518:6:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3522,7 +3522,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 251,
+                    "id": 285,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "518:6:2",
@@ -3537,7 +3537,7 @@
               ],
               "src": "476:49:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "421:296:2",
             "stateMutability": "view",
             "superFunction": null,
@@ -3545,54 +3545,54 @@
           },
           {
             "body": {
-              "id": 288,
+              "id": 322,
               "nodeType": "Block",
               "src": "781:41:2",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 286,
+                    "id": 320,
                     "name": "componentsCount",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 237,
+                    "referencedDeclaration": 271,
                     "src": "799:15:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 285,
-                  "id": 287,
+                  "functionReturnParameters": 319,
+                  "id": 321,
                   "nodeType": "Return",
                   "src": "792:22:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 289,
+            "id": 323,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getComponentsCount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 282,
+              "id": 316,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "752:2:2"
             },
             "returnParameters": {
-              "id": 285,
+              "id": 319,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 284,
+                  "id": 318,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 289,
+                  "scope": 323,
                   "src": "776:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3601,7 +3601,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 283,
+                    "id": 317,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "776:4:2",
@@ -3616,7 +3616,7 @@
               ],
               "src": "775:6:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "725:97:2",
             "stateMutability": "view",
             "superFunction": null,
@@ -3624,37 +3624,37 @@
           },
           {
             "body": {
-              "id": 341,
+              "id": 375,
               "nodeType": "Block",
               "src": "851:258:2",
               "statements": [
                 {
                   "assignments": [
-                    293
+                    327
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 293,
+                      "id": 327,
                       "name": "m",
                       "nodeType": "VariableDeclaration",
-                      "scope": 341,
+                      "scope": 375,
                       "src": "864:19:2",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                        "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                         "typeString": "struct ProjectOffice.Components"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 292,
+                        "id": 326,
                         "name": "Components",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 231,
+                        "referencedDeclaration": 265,
                         "src": "864:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_storage_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_storage_ptr",
                           "typeString": "struct ProjectOffice.Components"
                         }
                       },
@@ -3662,7 +3662,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 294,
+                  "id": 328,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "864:19:2"
@@ -3670,7 +3670,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 300,
+                    "id": 334,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3679,25 +3679,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 295,
+                        "id": 329,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "894:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 297,
+                      "id": 331,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "componentId",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 220,
+                      "referencedDeclaration": 254,
                       "src": "894:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -3710,18 +3710,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 298,
+                        "id": 332,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 435,
+                        "referencedDeclaration": 469,
                         "src": "910:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 299,
+                      "id": 333,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3741,14 +3741,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 301,
+                  "id": 335,
                   "nodeType": "ExpressionStatement",
                   "src": "894:26:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 306,
+                    "id": 340,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3757,25 +3757,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 302,
+                        "id": 336,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "931:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 304,
+                      "id": 338,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Shafts",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 224,
+                      "referencedDeclaration": 258,
                       "src": "931:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -3787,7 +3787,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 305,
+                      "id": 339,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3808,14 +3808,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 307,
+                  "id": 341,
                   "nodeType": "ExpressionStatement",
                   "src": "931:12:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 312,
+                    "id": 346,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3824,25 +3824,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 308,
+                        "id": 342,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "954:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 310,
+                      "id": 344,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Controllers",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 222,
+                      "referencedDeclaration": 256,
                       "src": "954:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -3854,7 +3854,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "32",
-                      "id": 311,
+                      "id": 345,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3875,14 +3875,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 313,
+                  "id": 347,
                   "nodeType": "ExpressionStatement",
                   "src": "954:17:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 318,
+                    "id": 352,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3891,25 +3891,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 314,
+                        "id": 348,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "982:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 316,
+                      "id": 350,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Doors",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 226,
+                      "referencedDeclaration": 260,
                       "src": "982:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -3921,7 +3921,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "33",
-                      "id": 317,
+                      "id": 351,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3942,14 +3942,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 319,
+                  "id": 353,
                   "nodeType": "ExpressionStatement",
                   "src": "982:11:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 324,
+                    "id": 358,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3958,25 +3958,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 320,
+                        "id": 354,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "1004:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 322,
+                      "id": 356,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Buttons",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 228,
+                      "referencedDeclaration": 262,
                       "src": "1004:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -3988,7 +3988,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "34",
-                      "id": 323,
+                      "id": 357,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -4009,14 +4009,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 325,
+                  "id": 359,
                   "nodeType": "ExpressionStatement",
                   "src": "1004:13:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 330,
+                    "id": 364,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4025,25 +4025,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 326,
+                        "id": 360,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "1028:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 328,
+                      "id": 362,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Displays",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 230,
+                      "referencedDeclaration": 264,
                       "src": "1028:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4055,7 +4055,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "35",
-                      "id": 329,
+                      "id": 363,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -4076,14 +4076,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 331,
+                  "id": 365,
                   "nodeType": "ExpressionStatement",
                   "src": "1028:14:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 333,
+                    "id": 367,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4094,11 +4094,11 @@
                     "src": "1055:17:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 332,
+                      "id": 366,
                       "name": "componentsCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 237,
+                      "referencedDeclaration": 271,
                       "src": "1055:15:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4110,7 +4110,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 334,
+                  "id": 368,
                   "nodeType": "ExpressionStatement",
                   "src": "1055:17:2"
                 },
@@ -4120,14 +4120,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 338,
+                        "id": 372,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 293,
+                        "referencedDeclaration": 327,
                         "src": "1099:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       }
@@ -4135,24 +4135,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 335,
+                        "id": 369,
                         "name": "components",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 234,
+                        "referencedDeclaration": 268,
                         "src": "1083:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                           "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                         }
                       },
-                      "id": 337,
+                      "id": 371,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4162,11 +4162,11 @@
                       "referencedDeclaration": null,
                       "src": "1083:15:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$231_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$265_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct ProjectOffice.Components storage ref) returns (uint256)"
                       }
                     },
-                    "id": 339,
+                    "id": 373,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4180,32 +4180,32 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 340,
+                  "id": 374,
                   "nodeType": "ExpressionStatement",
                   "src": "1083:18:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 342,
+            "id": 376,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 290,
+              "id": 324,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "841:2:2"
             },
             "returnParameters": {
-              "id": 291,
+              "id": 325,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "851:0:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "830:279:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -4213,37 +4213,37 @@
           },
           {
             "body": {
-              "id": 418,
+              "id": 452,
               "nodeType": "Block",
               "src": "1219:344:2",
               "statements": [
                 {
                   "assignments": [
-                    354
+                    388
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 354,
+                      "id": 388,
                       "name": "m",
                       "nodeType": "VariableDeclaration",
-                      "scope": 418,
+                      "scope": 452,
                       "src": "1230:19:2",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                        "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                         "typeString": "struct ProjectOffice.Components"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 353,
+                        "id": 387,
                         "name": "Components",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 231,
+                        "referencedDeclaration": 265,
                         "src": "1230:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_storage_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_storage_ptr",
                           "typeString": "struct ProjectOffice.Components"
                         }
                       },
@@ -4251,7 +4251,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 355,
+                  "id": 389,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "1230:19:2"
@@ -4259,7 +4259,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 361,
+                    "id": 395,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4268,25 +4268,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 356,
+                        "id": 390,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1260:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 358,
+                      "id": 392,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "componentId",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 220,
+                      "referencedDeclaration": 254,
                       "src": "1260:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -4299,18 +4299,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 359,
+                        "id": 393,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 435,
+                        "referencedDeclaration": 469,
                         "src": "1276:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 360,
+                      "id": 394,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4330,14 +4330,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 362,
+                  "id": 396,
                   "nodeType": "ExpressionStatement",
                   "src": "1260:26:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 367,
+                    "id": 401,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4346,25 +4346,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 363,
+                        "id": 397,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1297:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 365,
+                      "id": 399,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Shafts",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 224,
+                      "referencedDeclaration": 258,
                       "src": "1297:8:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4375,11 +4375,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 366,
+                      "id": 400,
                       "name": "Elevators",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
+                      "referencedDeclaration": 382,
                       "src": "1308:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4392,14 +4392,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 368,
+                  "id": 402,
                   "nodeType": "ExpressionStatement",
                   "src": "1297:20:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 373,
+                    "id": 407,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4408,25 +4408,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 369,
+                        "id": 403,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1328:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 371,
+                      "id": 405,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Controllers",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 222,
+                      "referencedDeclaration": 256,
                       "src": "1328:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4437,11 +4437,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 372,
+                      "id": 406,
                       "name": "Batteries",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 344,
+                      "referencedDeclaration": 378,
                       "src": "1344:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4454,14 +4454,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 374,
+                  "id": 408,
                   "nodeType": "ExpressionStatement",
                   "src": "1328:25:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 387,
+                    "id": 421,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4470,25 +4470,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 375,
+                        "id": 409,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1364:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 377,
+                      "id": 411,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Doors",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 226,
+                      "referencedDeclaration": 260,
                       "src": "1364:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4503,7 +4503,7 @@
                         "typeIdentifier": "t_uint64",
                         "typeString": "uint64"
                       },
-                      "id": 386,
+                      "id": 420,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4517,18 +4517,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 380,
+                            "id": 414,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 378,
+                              "id": 412,
                               "name": "Elevators",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 348,
+                              "referencedDeclaration": 382,
                               "src": "1375:9:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -4540,7 +4540,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "32",
-                              "id": 379,
+                              "id": 413,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -4562,7 +4562,7 @@
                             }
                           }
                         ],
-                        "id": 381,
+                        "id": 415,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -4586,18 +4586,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 384,
+                            "id": 418,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 382,
+                              "id": 416,
                               "name": "Floors",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 350,
+                              "referencedDeclaration": 384,
                               "src": "1393:6:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -4609,7 +4609,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "32",
-                              "id": 383,
+                              "id": 417,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -4631,7 +4631,7 @@
                             }
                           }
                         ],
-                        "id": 385,
+                        "id": 419,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -4656,14 +4656,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 388,
+                  "id": 422,
                   "nodeType": "ExpressionStatement",
                   "src": "1364:40:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 401,
+                    "id": 435,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4672,25 +4672,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 389,
+                        "id": 423,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1415:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 391,
+                      "id": 425,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Buttons",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 228,
+                      "referencedDeclaration": 262,
                       "src": "1415:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4705,7 +4705,7 @@
                         "typeIdentifier": "t_uint64",
                         "typeString": "uint64"
                       },
-                      "id": 400,
+                      "id": 434,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4719,18 +4719,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 394,
+                            "id": 428,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 392,
+                              "id": 426,
                               "name": "Elevators",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 348,
+                              "referencedDeclaration": 382,
                               "src": "1428:9:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -4742,7 +4742,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "38",
-                              "id": 393,
+                              "id": 427,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -4764,7 +4764,7 @@
                             }
                           }
                         ],
-                        "id": 395,
+                        "id": 429,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -4788,18 +4788,18 @@
                               "typeIdentifier": "t_uint64",
                               "typeString": "uint64"
                             },
-                            "id": 398,
+                            "id": 432,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftExpression": {
                               "argumentTypes": null,
-                              "id": 396,
+                              "id": 430,
                               "name": "Columns",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 346,
+                              "referencedDeclaration": 380,
                               "src": "1446:7:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint64",
@@ -4811,7 +4811,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "3136",
-                              "id": 397,
+                              "id": 431,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -4833,7 +4833,7 @@
                             }
                           }
                         ],
-                        "id": 399,
+                        "id": 433,
                         "isConstant": false,
                         "isInlineArray": false,
                         "isLValue": false,
@@ -4858,14 +4858,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 402,
+                  "id": 436,
                   "nodeType": "ExpressionStatement",
                   "src": "1415:44:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 407,
+                    "id": 441,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4874,25 +4874,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 403,
+                        "id": 437,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1470:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       },
-                      "id": 405,
+                      "id": 439,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "Displays",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 230,
+                      "referencedDeclaration": 264,
                       "src": "1470:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4903,11 +4903,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 406,
+                      "id": 440,
                       "name": "Elevators",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
+                      "referencedDeclaration": 382,
                       "src": "1483:9:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint64",
@@ -4920,14 +4920,14 @@
                       "typeString": "uint64"
                     }
                   },
-                  "id": 408,
+                  "id": 442,
                   "nodeType": "ExpressionStatement",
                   "src": "1470:22:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 410,
+                    "id": 444,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4938,11 +4938,11 @@
                     "src": "1505:17:2",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 409,
+                      "id": 443,
                       "name": "componentsCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 237,
+                      "referencedDeclaration": 271,
                       "src": "1505:15:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4954,7 +4954,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 411,
+                  "id": 445,
                   "nodeType": "ExpressionStatement",
                   "src": "1505:17:2"
                 },
@@ -4964,14 +4964,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 415,
+                        "id": 449,
                         "name": "m",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 354,
+                        "referencedDeclaration": 388,
                         "src": "1549:1:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       }
@@ -4979,24 +4979,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Components_$231_memory_ptr",
+                          "typeIdentifier": "t_struct$_Components_$265_memory_ptr",
                           "typeString": "struct ProjectOffice.Components memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 412,
+                        "id": 446,
                         "name": "components",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 234,
+                        "referencedDeclaration": 268,
                         "src": "1533:10:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Components_$231_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Components_$265_storage_$dyn_storage",
                           "typeString": "struct ProjectOffice.Components storage ref[] storage ref"
                         }
                       },
-                      "id": 414,
+                      "id": 448,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5006,11 +5006,11 @@
                       "referencedDeclaration": null,
                       "src": "1533:15:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$231_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Components_$265_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct ProjectOffice.Components storage ref) returns (uint256)"
                       }
                     },
-                    "id": 416,
+                    "id": 450,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5024,29 +5024,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 417,
+                  "id": 451,
                   "nodeType": "ExpressionStatement",
                   "src": "1533:18:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 419,
+            "id": 453,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "addComponents",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 351,
+              "id": 385,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 344,
+                  "id": 378,
                   "name": "Batteries",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1140:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5055,7 +5055,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 343,
+                    "id": 377,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1140:6:2",
@@ -5069,10 +5069,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 346,
+                  "id": 380,
                   "name": "Columns",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1158:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5081,7 +5081,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 345,
+                    "id": 379,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1158:6:2",
@@ -5095,10 +5095,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 348,
+                  "id": 382,
                   "name": "Elevators",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1174:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5107,7 +5107,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 347,
+                    "id": 381,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1174:6:2",
@@ -5121,10 +5121,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 350,
+                  "id": 384,
                   "name": "Floors",
                   "nodeType": "VariableDeclaration",
-                  "scope": 419,
+                  "scope": 453,
                   "src": "1192:13:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5133,7 +5133,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 349,
+                    "id": 383,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "1192:6:2",
@@ -5149,19 +5149,19 @@
               "src": "1139:67:2"
             },
             "returnParameters": {
-              "id": 352,
+              "id": 386,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1219:0:2"
             },
-            "scope": 420,
+            "scope": 454,
             "src": "1117:446:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 421,
+        "scope": 455,
         "src": "100:1466:2"
       }
     ],
@@ -5175,12 +5175,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xd9D122B8bC84d0f01b529741D8479Ec598df9FA2",
-      "transactionHash": "0xa7955dabf903185bd07ba06c602b00a090b76dfbbc59cb6e019386565d7fa0eb"
+      "address": "0x4F6399A4028bB7c68E0193c3957395A615473607",
+      "transactionHash": "0x9d31aef0fb0292687af38377ae0eece30b9d305992464c829be44aa76d7bc441"
     }
   },
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-12-10T04:28:11.467Z",
+  "updatedAt": "2020-12-10T06:25:30.775Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

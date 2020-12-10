@@ -94,7 +94,7 @@ var App = {
         for (var i = 0; i < item[0]; i++) {  
 
           var component = await item[1].getComponents(i);
-          addToList(component[0], "command-list", function() {getCommandInfos(component[1],component[2],component[3],component[4],component[5])});
+          addToList(component[0], "command-list", function() {getCommandInfos(component[0], component[1],component[2],component[3],component[4],component[5])});
         } 
       })
   },
@@ -134,7 +134,8 @@ function getMaterialInfos(item1, item2, item3, item4, item5, item6, item7) {
 
 }
 
-function getCommandInfos(item1, item2, item3, item4, item5) {
+function getCommandInfos(item0, item1, item2, item3, item4, item5) {
+  document.getElementById("commandAddress").value = item0;
   document.getElementById("controllers").value = item1;
   document.getElementById("shafts").value = item2;
   document.getElementById("doors").value = item3;
@@ -142,13 +143,37 @@ function getCommandInfos(item1, item2, item3, item4, item5) {
   document.getElementById("displays").value = item5;
 }
 
-  function addToList(item, list_name, click_function) {
-  var element = document.createElement("a")
-  element.textContent = item
-  element.classList.add("collection-item")
-  element.onclick = function() { click_function()};
-  document.getElementById(list_name).appendChild(element)
-}
+  async function addToList(item, list_name, click_function) {
+    var element = document.createElement("a")
+
+    element.textContent = item
+    element.classList.add("collection-item")
+    element.onclick = function() { click_function()};
+    document.getElementById(list_name).appendChild(element)
+
+    return await alreadySubmitted(element.textContent);
+  }
+
+  async function alreadySubmitted(text) {
+    App.contracts.Materials.deployed().then(async function(instance){
+        
+      var materialInstance = instance;
+
+      var bool = await materialInstance.getBool(text);
+        return bool;
+      
+    }).then(async function(bool){
+      console.log(bool);
+      var button = document.getElementById("build-material");
+
+      if (bool){
+        button.disabled = true;
+      }else{
+        button.disable = false;
+      }
+
+    })
+  }
 
 async function create_material(){
 
@@ -156,32 +181,36 @@ async function create_material(){
     if (error) {
       console.log(error);
     }
-  
+
+    var account = accounts[0];
+
+    var commandAddress = document.getElementById("commandAddress").value;
     var controllers = document.getElementById("controllers").value;
     var shafts = document.getElementById("shafts").value;
     var doors = document.getElementById("doors").value;
     var buttons = document.getElementById("buttons").value;
     var displays = document.getElementById("displays").value;
 
-    App.contracts.Materials.deployed().then(async function(instance){
-      var materialInstance = instance;
+    if(controllers.length != 0 && shafts.length != 0 && doors.length != 0 && buttons.length != 0 && displays.length != 0){
 
-      if(controllers != "" && shafts != "" && doors != "" && buttons != "" && displays != ""){
+      App.contracts.Materials.deployed().then(async function(instance){
         
-        var creation = await materialInstance.createMaterials(controllers, shafts, doors, buttons, displays, {from: account});
-        var count = await materialInstance.materialListCount();
-        var item = [count, materialInstance];
-        return item;
-      }
-    }).then(async function(item) {
+          var materialInstance = instance;
 
-      var component1 = await item[1].getMaterials1(item[0]);
-       var component2 = await item[1].getMaterials2(item[0]);
+          await materialInstance.createMaterials( commandAddress, controllers, shafts, doors, buttons, displays, {from: account});
+          var count = await materialInstance.materialListCount();
 
-      return  addToList(component1[0], "material-list", function() {getMaterialInfos(component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
-    
-      // return App.updateMaterialList();
-    });
+          var item = [count, materialInstance];
+
+          return item;
+        
+      }).then(async function(item) {
+        var component1 = await item[1].getMaterials1(item[0]);
+        var component2 = await item[1].getMaterials2(item[0]);
+
+        return  addToList(component1[0], "material-list", function() {getMaterialInfos(component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
+      });
+    }
   });
 
   };

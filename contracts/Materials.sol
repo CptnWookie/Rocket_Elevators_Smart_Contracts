@@ -19,6 +19,7 @@ contract MaterialProvider {
     }
 
     mapping(uint => Materials) materials;
+    mapping (address => bool) addresses;
 
     uint public materialListCount = 0 ;
 
@@ -28,22 +29,27 @@ contract MaterialProvider {
         function getMaterials2(uint index) public view returns (uint, uint, uint, uint256){
             return (materials[index].interiorLightBulbs, materials[index].displaylEDs, materials[index].springs, materials[index].creation_date);
         }
+        function getBool(address index) public view returns (bool){
+            return addresses[index];
+        }
 
-     function createMaterials( uint64 controllers, uint64 shafts, uint64 doors, uint64 buttons, uint64 displays ) public returns (uint){
+     function createMaterials( address index, uint64 controllers, uint64 shafts, uint64 doors, uint64 buttons, uint64 displays ) public returns (uint){
 
-        
-         uint64 aluminiumBars = shafts*4;
-         uint64 stainlessSteel = shafts*6 + doors*2;
-         uint64 rubber = doors*2;
-         uint64 lightBulbs = shafts*4;
-         uint64 lEDs = buttons + displays + controllers;
-         uint64 springs = doors*2;
-         uint256 creation_date = block.timestamp;
-        
-         Materials memory new_material = Materials(msg.sender, aluminiumBars, stainlessSteel, rubber, lightBulbs, lEDs, springs, creation_date);
-        
+                
+        Materials memory new_material;
+
+        new_material.materialId = msg.sender;
+        new_material.aluminiumBars = shafts*4;
+        new_material.stainlessSteelSheets = shafts*6 + doors*2;
+        new_material.bumperRubberBands = doors*2;
+        new_material.interiorLightBulbs = shafts*4;
+        new_material.displaylEDs = buttons + displays + controllers;
+        new_material.springs = doors*2;
+        new_material.creation_date = block.timestamp;
+            
         materialListCount++;
         materials[materialListCount] = new_material;
+        addresses[index] = true;
 
         return  materialListCount;
          }
