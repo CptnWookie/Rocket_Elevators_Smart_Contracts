@@ -68,9 +68,20 @@ var App = {
       return App.setInitialCommands();
            
       });
+
+      return App.setTitle();
     });
   },
+  setTitle: async function(){
+      App.contracts.Materials.deployed().then(async function(instance) {
+         
+      var materialInstance = instance;
+      var address = await materialInstance.getAddress();
 
+      document.getElementById("material-provider-address").innerHTML = address;
+
+    })
+  },
   setInitialMaterials: async function() {
     App.contracts.Materials.deployed().then(function(instance) {
         document.getElementById("build-material").onclick = async function() { create_material()}
@@ -79,7 +90,7 @@ var App = {
     return await App.updateMaterialList();
   },
  
-  setInitialCommands: function() {
+  setInitialCommands: async function() {
 
     App.contracts.ProjectOffice.deployed().then(async function (instance) {
       
@@ -91,10 +102,10 @@ var App = {
       return item
     }).then(async function(item){
 
-        for (var i = 0; i < item[0]; i++) {  
+        for (let i = 0; i < item[0]; i++) {  
 
           var component = await item[1].getComponents(i);
-          addToList(component[0], "command-list", function() {getCommandInfos(component[0], component[1],component[2],component[3],component[4],component[5])});
+          await addToList(i, component[0], "command-list", async () => getCommandInfos(i));
         } 
       })
   },
@@ -108,14 +119,14 @@ var App = {
 
       var item = [count, MaterialInstance]
 
-      return await item
+      return item
     }).then(async function(item){
         if(item[0] > 0){
           for (let i = 1; i <= item[0]; i++) {  
-
+            
             var component1 = await item[1].getMaterials1(i);
             var component2 = await item[1].getMaterials2(i);
-            addToList(component1[0], "material-list", function() {getMaterialInfos(component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
+            await addToList(i, component1[0], "material-list", async function() {getMaterialInfos( component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
           } 
         }
       })
@@ -134,42 +145,64 @@ function getMaterialInfos(item1, item2, item3, item4, item5, item6, item7) {
 
 }
 
-function getCommandInfos(item0, item1, item2, item3, item4, item5) {
-  document.getElementById("commandAddress").value = item0;
-  document.getElementById("controllers").value = item1;
-  document.getElementById("shafts").value = item2;
-  document.getElementById("doors").value = item3;
-  document.getElementById("buttons").value = item4;
-  document.getElementById("displays").value = item5;
+async function getCommandInfos(index) {
+
+  App.contracts.ProjectOffice.deployed().then(async function (instance) {
+      
+    var projectInstance = instance;
+    var count = await projectInstance. getComponents(index);
+
+    return count
+  }).then(async function(item){
+  
+  document.getElementById("commandAddress").value = item[0];
+  document.getElementById("controllers").value = item[1];
+  document.getElementById("shafts").value = item[2];
+  document.getElementById("doors").value = item[3];
+  document.getElementById("buttons").value = item[4];
+  document.getElementById("displays").value = item[5];
+  
+  });
 }
 
-  async function addToList(item, list_name, click_function) {
-    var element = document.createElement("a")
-
+  async function addToList(index, item, list_name, click_function) {
+  var element = document.createElement("a");
+    element.setAttribute("id", index);
     element.textContent = item
     element.classList.add("collection-item")
-    element.onclick = function() { click_function()};
+    element.addEventListener("click", click_function);
+    element.addEventListener("click", async function() {alreadySubmitted();});
     document.getElementById(list_name).appendChild(element)
 
-    return await alreadySubmitted(element.textContent);
+  //  return await alreadySubmitted();
   }
 
-  async function alreadySubmitted(text) {
+  async function alreadySubmitted() {
+
+    var commandAddress = document.getElementById("commandAddress").value;
+    var controllers = document.getElementById("controllers").value;
+    var shafts = document.getElementById("shafts").value;
+    var doors = document.getElementById("doors").value;
+    var buttons = document.getElementById("buttons").value;
+    var displays = document.getElementById("displays").value;
+
     App.contracts.Materials.deployed().then(async function(instance){
         
       var materialInstance = instance;
 
-      var bool = await materialInstance.getBool(text);
-        return bool;
+      var bool = await materialInstance.getBool(commandAddress, controllers, shafts, doors, buttons, displays);
+      
+      return bool;
       
     }).then(async function(bool){
       console.log(bool);
       var button = document.getElementById("build-material");
 
       if (bool){
-        button.disabled = true;
-      }else{
-        button.disable = false;
+        return button.disabled = true;
+      }else {
+        return button.disabled = false;
+
       }
 
     })
@@ -208,7 +241,7 @@ async function create_material(){
         var component1 = await item[1].getMaterials1(item[0]);
         var component2 = await item[1].getMaterials2(item[0]);
 
-        return  addToList(component1[0], "material-list", function() {getMaterialInfos(component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
+        return  addToList(component1[0], component1[0], "material-list", function() {getMaterialInfos(component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
       });
     }
   });
@@ -220,7 +253,7 @@ async function create_material(){
 
 
 $(function() {
-  $(window).load(function() {
-    App.init();
+  $(window).load(async function() {
+    await App.init();
   });
 });

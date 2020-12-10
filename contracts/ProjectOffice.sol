@@ -29,6 +29,9 @@ contract ProjectOffice {
     constructor() public {
 
         Components memory m;
+        Components memory n;
+        Components memory x;
+
         m.componentId = msg.sender;
         m.Shafts = 1;
         m.Controllers = 2;
@@ -36,8 +39,27 @@ contract ProjectOffice {
         m.Buttons = 4;
         m.Displays = 5;
 
+        n.componentId = msg.sender;
+        n.Shafts = 5;
+        n.Controllers = 4;
+        n.Doors = 3;
+        n.Buttons = 2;
+        n.Displays = 1;
+
+        x.componentId = msg.sender;
+        x.Shafts = 2;
+        x.Controllers = 4;
+        x.Doors = 1;
+        x.Buttons = 5;
+        x.Displays = 3;
+
+
+        componentsCount++;
+        componentsCount++;
         componentsCount++;
         components.push(m);
+        components.push(n);
+        components.push(x);
     }
 
     function addComponents(uint64 Batteries, uint64 Columns, uint64 Elevators, uint64 Floors) public
