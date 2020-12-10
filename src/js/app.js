@@ -120,8 +120,29 @@ var App = {
 
         for (var i = 0; i < item[0]; i++) {  
           var component = await item[1].getComponents(i);
-          addItemToList(component[0], "command-list", function() {getCommandInfos(component[1],component[2],component[3],component[4],component[5])});
+          addToList(component[0], "command-list", function() {getCommandInfos(component[1],component[2],component[3],component[4],component[5])});
         } 
+      })
+  },
+
+  updateMaterialList: function() {
+
+    App.contracts.Materials.deployed().then(async function (instance) {
+      
+      var MaterialInstance = instance;
+      var count = await MaterialInstance.materialListCount();
+
+      var item = [count, MaterialInstance]
+
+      return await item
+    }).then(async function(item){
+        if(item[0] > 0){
+          for (var i = 1; i <= item[0]; i++) {  
+            var component1 = await item[1].getMaterials1(i);
+            var component2 = await item[1].getMaterials2(i);
+            addToList(component1[0], "material-list", function() {getMaterialInfos(component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
+          } 
+        }
       })
   },
 
@@ -154,6 +175,22 @@ var App = {
 
 };
 
+function getMaterialInfos(item1, item2, item3, item4, item5, item6, item7) {
+  console.log("BRAPBRAP");
+  console.log(item1);
+  console.log("BRAPBRAP");
+  $("#aluminium").text(item1);
+  $("#steel").text(item2);
+  $("#bumper").text(item3);
+  $("#light").text(item4);
+  $("#led").text(item5);
+  $("#spring").text(item6);
+  $("#date").text(item7);
+
+
+ // toggleActive(this)
+}
+
 function getCommandInfos(item1, item2, item3, item4, item5) {
   console.log("BRAPBRAP");
   console.log(item1);
@@ -167,7 +204,7 @@ function getCommandInfos(item1, item2, item3, item4, item5) {
  // toggleActive(this)
 }
 
-  function addItemToList(item, list_name, click_function) {
+  function addToList(item, list_name, click_function) {
   var element = document.createElement("a")
   element.textContent = item
   element.classList.add("collection-item")
@@ -201,8 +238,11 @@ async function create_material(){
         
         return await materialInstance.createMaterials(controllers, shafts, doors, buttons, displays, {from: account});
       }
-    }).then(function(result) {
-      return console.log(result);
+    }).then(function(instance) {
+      console.log("BABABABABABA");
+      console.log(instance);
+      console.log("ABABABABABBA");
+      return App.updateMaterialList();
     });
   });
 

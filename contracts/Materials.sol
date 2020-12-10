@@ -9,19 +9,27 @@ contract MaterialProvider {
 
     struct Materials{
         address materialId;
-        uint64 aluminiumBars;
-        uint64 stainlessSteelSheets;
-        uint64 bumperRubberBands;
-        uint64 interiorLightBulbs;
-        uint64 displaylEDs;
-        uint64 springs;
+        uint aluminiumBars;
+        uint stainlessSteelSheets;
+        uint bumperRubberBands;
+        uint interiorLightBulbs;
+        uint displaylEDs;
+        uint springs;
         uint256 creation_date;
     }
 
-    Materials[] materials;
+    mapping(uint => Materials) materials;
+    
     uint public materialListCount = 0 ;
 
-     function createMaterials( uint64 controllers, uint64 shafts, uint64 doors, uint64 buttons, uint64 displays ) public returns (uint){
+        function getMaterials1(uint index) public view returns (address, uint, uint, uint){
+            return (materials[index].materialId, materials[index].aluminiumBars, materials[index].stainlessSteelSheets,materials[index].bumperRubberBands);
+        }
+        function getMaterials2(uint index) public view returns (uint, uint, uint, uint256){
+            return (materials[index].interiorLightBulbs, materials[index].displaylEDs, materials[index].springs, materials[index].creation_date);
+        }
+
+     function createMaterials( uint64 controllers, uint64 shafts, uint64 doors, uint64 buttons, uint64 displays ) public returns (Materials memory){
 
         
          uint64 aluminiumBars = shafts*4;
@@ -30,13 +38,13 @@ contract MaterialProvider {
          uint64 lightBulbs = shafts*4;
          uint64 lEDs = buttons + displays + controllers;
          uint64 springs = doors*2;
-        uint256 creation_date = block.timestamp;
+         uint256 creation_date = block.timestamp;
         
          Materials memory new_material = Materials(msg.sender, aluminiumBars, stainlessSteel, rubber, lightBulbs, lEDs, springs, creation_date);
-
-        materials[materialListCount] = new_material;
+        
         materialListCount++;
+        materials[materialListCount] = new_material;
 
-        return  materialListCount;
+        return  new_material;
          }
 }
