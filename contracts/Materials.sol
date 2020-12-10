@@ -19,7 +19,7 @@ contract MaterialProvider {
     }
 
     mapping(uint => Materials) materials;
-    
+
     uint public materialListCount = 0 ;
 
         function getMaterials1(uint index) public view returns (address, uint, uint, uint){
@@ -29,7 +29,7 @@ contract MaterialProvider {
             return (materials[index].interiorLightBulbs, materials[index].displaylEDs, materials[index].springs, materials[index].creation_date);
         }
 
-     function createMaterials( uint64 controllers, uint64 shafts, uint64 doors, uint64 buttons, uint64 displays ) public returns (Materials memory){
+     function createMaterials( uint64 controllers, uint64 shafts, uint64 doors, uint64 buttons, uint64 displays ) public returns (uint){
 
         
          uint64 aluminiumBars = shafts*4;
@@ -45,6 +45,6 @@ contract MaterialProvider {
         materialListCount++;
         materials[materialListCount] = new_material;
 
-        return  new_material;
+        return  materialListCount;
          }
 }
