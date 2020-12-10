@@ -50,27 +50,19 @@ var App = {
 
   initContract: function() {
     $.getJSON('MaterialProvider.json', function(data) {
-      // Get the necessary contract artifact file and instantiate it with @truffle/contract
-      var MaterialsArtifact = data;
-      
+
+      var MaterialsArtifact = data;     
       App.contracts.Materials = TruffleContract(MaterialsArtifact);
-      console.log(App.contracts.Materials);    
-      // Set the provider for our contract
       App.contracts.Materials.setProvider(App.web3Provider);
 
       App.contracts.Materials.deployed().then(function(instance) {
+        document.getElementById("build-material").onclick = async function() { create_material()}
+      })    
 
-        return console.log("MATERIAL PROVIDER");
-      })
-
-
-    
-      // Use our contract to retrieve and mark the adopted pets
-      //return App.markAdopted();
     }).done( function() {
 
     $.getJSON('ProjectOffice.json', function(data) {
-      // Get the necessary contract artifact file and instantiate it with @truffle/contract
+
       var ProjectOfficeArtifact = data;
       App.contracts.ProjectOffice = TruffleContract(ProjectOfficeArtifact);
       App.contracts.ProjectOffice.setProvider(App.web3Provider);
@@ -82,6 +74,33 @@ var App = {
 
     return App.bindEvents();
   },
+
+  setCreateButton: function(instance){
+
+    document.getElementById("build-material").onclick = async function() { 
+       App.contracts.Materials.deployed().then(async function (instance) {
+           
+         var materialInstance = instance;
+         console.log("#################");
+         console.log(materialInstance);
+         console.log("#######");
+
+         var controllers = document.getElementById("controllers").value;
+         var shafts = document.getElementById("shafts").value;
+         var doors = document.getElementById("doors").value;
+         var buttons = document.getElementById("buttons").value;
+         var displays = document.getElementById("displays").value;
+   
+         var creation = await materialInstance.createMaterials(controllers, shafts, doors, buttons, displays);
+
+         return creation
+       }).then(function(count){
+         console.log("BONJOUR");
+         console.log(count);
+         console.log("BONJOUR");
+       });
+     };
+   },
 
   bindEvents: function() {
    // $(document).on('click', '.btn-primary', App.handleMaterialsList);
@@ -99,12 +118,11 @@ var App = {
       return await item
     }).then(async function(item){
 
-      for (var i = 0; i < item[0]; i++) {  
-        var component = await item[1].getComponents(i);
-        addItemToList(component[0], "command-list", function() {getCommandInfos(component[1],component[2],component[3],component[4],component[5])});
-        //addItemToList(component[0], "command-list", function() { console.log("BRAPBRAP")});
-          }
-        })
+        for (var i = 0; i < item[0]; i++) {  
+          var component = await item[1].getComponents(i);
+          addItemToList(component[0], "command-list", function() {getCommandInfos(component[1],component[2],component[3],component[4],component[5])});
+        } 
+      })
   },
 
   handleMaterialsList: function(event) {
@@ -161,35 +179,41 @@ function getCommandInfos(item1, item2, item3, item4, item5) {
   document.getElementById(list_name).appendChild(element)
 }
 
-function create_material(controllers, shafts, doors, buttons, displays){
+async function create_material(){
 
-  if(controllers != null && shafts != null && doors != null && buttons != null && displays != null){
-
-    App.contracts.ProjectOffice.deployed().then(async function (instance) {
-      
-    var projectInstance = instance;
-    return await projectInstance.createMaterials(controllers, shafts, doors, buttons, displays);
-
-  }).then( function(count){
-    console.log("################");
-    console.log(count);
-    console.log("#####################");
-  });
-  }
-}
-
-$(function() {
-  $(window).load(function() {
-    App.init();
-
+  await web3.eth.getAccounts(function(error, accounts) {
+    if (error) {
+      console.log(error);
+    }
+  
+    var account = accounts[0];
+    console.log(account);
     var controllers = document.getElementById("controllers").value;
     var shafts = document.getElementById("shafts").value;
     var doors = document.getElementById("doors").value;
     var buttons = document.getElementById("buttons").value;
     var displays = document.getElementById("displays").value;
-    
-    $("#build-material").addEventListener(".onclick", console.log("BRAPBRAP"))//.onclick = function(){ console.log("HELLO")}; //{ create_material(controllers, shafts, doors, buttons, displays)};
+
+    App.contracts.Materials.deployed().then(async function(instance){
+      var materialInstance = instance;
+
+      if(controllers != "" && shafts != "" && doors != "" && buttons != "" && displays != ""){
+        
+        return await materialInstance.createMaterials(controllers, shafts, doors, buttons, displays, {from: account});
+      }
+    }).then(function(result) {
+      return console.log(result);
+    });
+  });
+
+  };
 
 
+
+
+
+$(function() {
+  $(window).load(function() {
+    App.init();
   });
 });
