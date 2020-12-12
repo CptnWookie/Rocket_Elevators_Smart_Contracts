@@ -1,6 +1,9 @@
 pragma solidity >=0.5.0 <0.8.0;
 pragma experimental ABIEncoderV2;
 //SPDX-License-Identifier: MIT
+
+
+/////////////MOST OF THE CODE HERE COME FROM ALIMOURA'S CONTRACT, WE JUST ADDED  A FEW THING, LIKE THE CONSTRUCTOR/////////
 contract ProjectOffice {
 
     address requester;

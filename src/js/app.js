@@ -1,7 +1,8 @@
 var App = {
   web3Provider: null,
   contracts: {},
-
+///////////////The firs two functions (init and initWeb3) are taken from the tutorial, the others we created. 
+/////Asynchronicity made it kinda hard, but we made it work!
   init: async function() {
     // Load materials.
     $.getJSON('../materials.json', function(data) {
@@ -48,13 +49,14 @@ var App = {
         return App.initContract();
       },
 
+      //////////////We initiate the two contracts////////////
   initContract: function() {
     $.getJSON('MaterialProvider.json', function(data) {
 
       var MaterialsArtifact = data;     
       App.contracts.Materials = TruffleContract(MaterialsArtifact);
       App.contracts.Materials.setProvider(App.web3Provider);
-  
+  //////Set initial material  lists
       return App.setInitialMaterials();
 
     }).done( function() {
@@ -65,6 +67,7 @@ var App = {
       App.contracts.ProjectOffice = TruffleContract(ProjectOfficeArtifact);
       App.contracts.ProjectOffice.setProvider(App.web3Provider);
       
+      ////////Set initial command list
       return App.setInitialCommands();
            
       });
@@ -72,6 +75,8 @@ var App = {
       return App.setTitle();
     });
   },
+
+  //////Set the current Address in the view///////////
   setTitle: async function(){
       App.contracts.Materials.deployed().then(async function(instance) {
          
@@ -82,14 +87,18 @@ var App = {
 
     })
   },
+  /////Add Material list in view//////////////
   setInitialMaterials: async function() {
     App.contracts.Materials.deployed().then(function(instance) {
+
+      ////////////Add "Onclick" function to submit buttonfor creating Material List/////////////
         document.getElementById("build-material").onclick = async function() { create_material()}
     })
 
     return await App.updateMaterialList();
   },
  
+  /////Add commands in view/////////////////////
   setInitialCommands: async function() {
 
     App.contracts.ProjectOffice.deployed().then(async function (instance) {
@@ -105,11 +114,15 @@ var App = {
         for (let i = 0; i < item[0]; i++) {  
 
           var component = await item[1].getComponents(i);
+
+
+          ////////////Add "Onclick" function to command list, to get the informations
           await addToList(i, component[0], "command-list", async () => getCommandInfos(i));
         } 
       })
   },
 
+////////Set the material lists in view///////////////////
   updateMaterialList: async function() {
 
     App.contracts.Materials.deployed().then(async function (instance) {
@@ -126,6 +139,7 @@ var App = {
             
             var component1 = await item[1].getMaterials1(i);
             var component2 = await item[1].getMaterials2(i);
+            ////////////Add "Onclick" function to material list to get the infromations
             await addToList(i, component1[0], "material-list", async function() {getMaterialInfos( component1[1],component1[2],component1[3],component2[0],component2[1],component2[2],component2[3])});
           } 
         }
@@ -177,6 +191,7 @@ async function getCommandInfos(index) {
   //  return await alreadySubmitted();
   }
 
+  //////////////////Check if a Material list is already submitted for a given command, and disable "Submit" button
   async function alreadySubmitted() {
 
     var commandAddress = document.getElementById("commandAddress").value;
@@ -224,6 +239,8 @@ async function create_material(){
     var buttons = document.getElementById("buttons").value;
     var displays = document.getElementById("displays").value;
 
+    //////Check if all fields are non-empty, so we don't make wrong material lists/////////////
+
     if(controllers.length != 0 && shafts.length != 0 && doors.length != 0 && buttons.length != 0 && displays.length != 0){
 
       App.contracts.Materials.deployed().then(async function(instance){
@@ -250,7 +267,7 @@ async function create_material(){
 
 
 
-
+///////Initiate the whole thing.
 
 $(function() {
   $(window).load(async function() {
